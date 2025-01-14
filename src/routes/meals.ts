@@ -96,4 +96,53 @@ export async function mealsRoutes(app: FastifyInstance) {
       return res.status(204).send();
     }
   );
+
+  app.get(
+    "/metrics",
+    { preHandler: [checkSessionIdExists] },
+    async (req, res) => {
+      const userId = req.user?.id;
+
+      const meals = await knex("meals")
+        .where({ user_id: userId })
+        .orderBy("date", "desc");
+
+      const totalMealsOnDiet = await knex("meals")
+        .where({ user_id: userId, is_on_diet: true })
+        .count("id", { as: "total" })
+        .first();
+
+      const totalMealsOutDiet = await knex("meals")
+        .where({ user_id: userId, is_on_diet: false })
+        .count("id", { as: "total" })
+        .first();
+
+      const betterDietSequence = meals.reduce(
+        (acc, meal) => {
+          if (meal.is_on_diet) {
+            acc.currentSequence += 1;
+          } else {
+            acc.currentSequence = 0;
+          }
+
+          if (acc.currentSequence > acc.betterSequence) {
+            acc.betterSequence = acc.currentSequence;
+          }
+
+          return acc;
+        },
+        { betterSequence: 0, currentSequence: 0 }
+      );
+
+      return res.send({
+        total_meals: meals.length,
+        total_meals_on_diet: totalMealsOnDiet?.total,
+        total_meals_out_diet: totalMealsOutDiet?.total,
+        diet_sequence: {
+          better_sequence: betterDietSequence.betterSequence,
+          current_sequence: betterDietSequence.currentSequence,
+        },
+      });
+    }
+  );
 }

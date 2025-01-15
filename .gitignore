@@ -1,5 +1,6 @@
 /node_modules
 .env
+.env.test
 notes.txt
 tmp/app.db
 /tmp

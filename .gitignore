@@ -2,3 +2,4 @@
 .env
 notes.txt
 tmp/app.db
+/tmp

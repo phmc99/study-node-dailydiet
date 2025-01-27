@@ -1,0 +1,33 @@
+_id: req_b0bc5c6ac3eb4794aea157863a527299
+type: Request
+parentId: wrk_50f5331f147c47e9931379e469a6e62a
+modified: 1736896513151
+created: 1736896299567
+url: http://localhost:3333/meals
+name: meals
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name": "Almoço",
+    	"description": "Arroz e frango",
+    	"isOnDiet": true,
+    	"date": "{% now 'iso-8601', '' %}"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.3
+authentication: {}
+metaSortKey: -1736882036362.4688
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

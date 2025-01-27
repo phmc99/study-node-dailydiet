@@ -1,0 +1,23 @@
+_id: req_310a3a879a904907b2ab2763fefc7090
+type: Request
+parentId: wrk_50f5331f147c47e9931379e469a6e62a
+modified: 1736896511698
+created: 1736896495565
+url: http://localhost:3333/meals
+name: meals
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: Insomnia/2023.5.3
+authentication: {}
+metaSortKey: -1736889167964.7344
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,270 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2025-03-07T02:27:19.314Z",
+  "__export_source": "insomnia.desktop.app:v10.3.1",
+  "resources": [
+    {
+      "_id": "req_310a3a879a904907b2ab2763fefc7090",
+      "parentId": "wrk_50f5331f147c47e9931379e469a6e62a",
+      "modified": 1736896511698,
+      "created": 1736896495565,
+      "url": "http://localhost:3333/meals",
+      "name": "meals",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "Insomnia/2023.5.3"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1736889167964.7344,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_50f5331f147c47e9931379e469a6e62a",
+      "parentId": null,
+      "modified": 1737417569304,
+      "created": 1736804998806,
+      "name": "Daily Diet",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_b0bc5c6ac3eb4794aea157863a527299",
+      "parentId": "wrk_50f5331f147c47e9931379e469a6e62a",
+      "modified": 1736896513151,
+      "created": 1736896299567,
+      "url": "http://localhost:3333/meals",
+      "name": "meals",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Almoço\",\n\t\"description\": \"Arroz e frango\",\n\t\"isOnDiet\": true,\n\t\"date\": \"{% now 'iso-8601', '' %}\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "Insomnia/2023.5.3"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1736882036362.4688,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_3a653280f15d4695940523c373ccaf5f",
+      "parentId": "wrk_50f5331f147c47e9931379e469a6e62a",
+      "modified": 1736896551462,
+      "created": 1736896534538,
+      "url": "http://localhost:3333/meals/69521aad-e0bc-4c23-aac8-9e9b59da6533",
+      "name": "meals/:id",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Almoço\",\n\t\"description\": \"Arroz, frango e legumes\",\n\t\"isOnDiet\": true,\n\t\"date\": \"{% now 'iso-8601', '' %}\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "Insomnia/2023.5.3"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1736843525710.2344,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_854a6ee8ea6748739c08c1c12974f510",
+      "parentId": "wrk_50f5331f147c47e9931379e469a6e62a",
+      "modified": 1736896580118,
+      "created": 1736896575656,
+      "url": "http://localhost:3333/meals/69521aad-e0bc-4c23-aac8-9e9b59da6533",
+      "name": "meals/:id",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "Insomnia/2023.5.3"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1736824270384.1172,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_3f3f8df3163a4ced8db1a567c4ddecc5",
+      "parentId": "wrk_50f5331f147c47e9931379e469a6e62a",
+      "modified": 1736896673299,
+      "created": 1736896671020,
+      "url": "http://localhost:3333/meals/69521aad-e0bc-4c23-aac8-9e9b59da6533",
+      "name": "meals/:id",
+      "description": "",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "Insomnia/2023.5.3"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1736814642721.0586,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_26d3a9653beb46bbb9621eb8ab43ec1a",
+      "parentId": "wrk_50f5331f147c47e9931379e469a6e62a",
+      "modified": 1736897663852,
+      "created": 1736897656499,
+      "url": "http://localhost:3333/meals/metrics",
+      "name": "metrics",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "Insomnia/2023.5.3"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1736809828889.5293,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_f45d810ff2e44b8ea8030c50a2f5a43c",
+      "parentId": "wrk_50f5331f147c47e9931379e469a6e62a",
+      "modified": 1736805085563,
+      "created": 1736805015058,
+      "url": "http://localhost:3333/users",
+      "name": "users",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Pedro\",\n\t\"email\": \"pedro@gmail.com\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "Insomnia/2023.5.3"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1736805015058,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_92da9fa678a23bec6bf3591f5559513e6cd22cec",
+      "parentId": "wrk_50f5331f147c47e9931379e469a6e62a",
+      "modified": 1736804998810,
+      "created": 1736804998810,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1736804998811,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_92da9fa678a23bec6bf3591f5559513e6cd22cec",
+      "parentId": "wrk_50f5331f147c47e9931379e469a6e62a",
+      "modified": 1736806194118,
+      "created": 1736804998813,
+      "name": "Default Jar",
+      "cookies": [
+        {
+          "key": "sessionId",
+          "value": "0050443a-8bfc-4474-8e6b-8264de27b633",
+          "maxAge": 604800000,
+          "domain": "localhost",
+          "path": "/",
+          "hostOnly": true,
+          "creation": "2025-01-13T22:09:54.118Z",
+          "lastAccessed": "2025-01-13T22:09:54.118Z",
+          "sameSite": "lax",
+          "id": "7541551759910001"
+        }
+      ],
+      "_type": "cookie_jar"
+    }
+  ]
+}

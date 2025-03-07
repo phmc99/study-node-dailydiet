@@ -1,6 +1,6 @@
 # DailyDiet - Node Study Project  
 
-[![Native Repo](https://img.shields.io/badge/DaiyDiet_React_Native-Repository-blue?logo=github)](https://github.com/phmc99/study-node-dailydiet)  
+[![Native Repo](https://img.shields.io/badge/DaiyDiet_React_Native-Repository-blue?logo=github)](https://github.com/phmc99/study-reactnative-dailydiet)  
 
 DailyDiet is a Rest API study project aimed at improving back-end development skills using Node.js.  
 

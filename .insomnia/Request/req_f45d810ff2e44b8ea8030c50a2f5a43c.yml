@@ -1,0 +1,31 @@
+_id: req_f45d810ff2e44b8ea8030c50a2f5a43c
+type: Request
+parentId: wrk_50f5331f147c47e9931379e469a6e62a
+modified: 1736805085563
+created: 1736805015058
+url: http://localhost:3333/users
+name: users
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name": "Pedro",
+    	"email": "pedro@gmail.com"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: Insomnia/2023.5.3
+authentication: {}
+metaSortKey: -1736805015058
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
